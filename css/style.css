@@ -1,0 +1,228 @@
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  user-select: none;
+  background: url('../img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 5vh;
+  font-family: DINPro, serif;
+  font-weight: bold;
+  color: #050e8a;
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.head-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  /* line-height: 5vh; */
+}
+
+.groups-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-column: 2 / 4;
+  grid-row: 2;
+  padding: 2px;
+}
+
+.teams-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: 1;
+  grid-row: 2;
+  padding: 10px;
+}
+
+.team {
+  min-height: 10%;
+  background: white;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vh;
+  box-shadow: 3px 3px 1px 0 #0000007a;
+  font-family: DINPro, serif;
+  font-size: 2.5vh;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  line-height: 3.6vh;
+  padding: 0 8px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  margin: 2px;
+  box-shadow: 3px 3px 1px 0 #0000007a;
+  font-size: 10px;
+}
+
+.group-name {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgb(243, 43, 3) 0%,
+    rgb(193, 27, 44) 37%,
+    rgb(182, 45, 64) 72%,
+    rgb(233, 49, 28) 100%
+  );
+  border-radius: 0.5vh 0.5vh 0 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .group-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: 90%;
+  border: 1px dotted black;
+  background: linear-gradient(45deg, #87e0fd 0%, #53cbf1 28%, #05abe0 87%);
+} */
+
+.group-body {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+  gap: 0.1%;
+  border: 1px dotted black;
+  background: linear-gradient(45deg, #87e0fd 0%, #53cbf1 28%, #05abe0 87%);
+  height: 100%;
+}
+
+.my-badge {
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  font-weight: bolder;
+  /* background: radial-gradient(ellipse at center, #7abcff 0%, #60abf8 44%, #4096ee 100%); */
+  color: rgb(14, 14, 73);
+}
+
+.team-container {
+  width: 100%;
+  height: 100%;
+  border: 1px dotted black;
+}
+
+.team-place {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vh;
+  box-shadow: 3px 3px 1px 0 #0000007a;
+  font-family: DINPro, serif;
+  font-size: 16px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  background: #fff;
+  color: #a11c0e;
+  /* line-height: 3vh; */
+}
+
+.drop {
+}
+
+.drop.highlight {
+}
+
+#button {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  right: 0.5%;
+}
+
+.text-stroke {
+  text-shadow: -0 -0.8px 0 #ffffff, 0 -0.8px 0 #ffffff, -0 0.8px 0 #ffffff, 0 0.8px 0 #ffffff, -0.8px -0 0 #ffffff,
+    0.8px -0 0 #ffffff, -0.8px 0 0 #ffffff, 0.2px 0 0 #ffffff, -0.8px -0.8px 0 #ffffff, 0.8px -0.8px 0 #ffffff,
+    -0.8px 0.8px 0 #ffffff, 0.8px 0.8px 0 #ffffff, -0.8px -0.8px 0 #ffffff, 0.8px -0.8px 0 #ffffff,
+    -0.8px 0.8px 0 #ffffff, 0.8px 0.8px 0 #ffffff;
+}
+
+.army-logo {
+  height: 100%;
+  width: 20%;
+}
+
+#button svg {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#refresh {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  left: 0.5%;
+  font-size: 5vh;
+  transform: rotate(110deg);
+  font-weight: bold;
+  color: #305786;
+  cursor: pointer;
+  user-select: none;
+}
+
+#refresh:hover {
+  color: #4cae4c;
+}
+
+.reload {
+  font-family: Lucida Sans Unicode, serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.my-hide {
+  opacity: 0;
+  cursor: default;
+}
