@@ -135,7 +135,7 @@ var groups = [
   {
     id: 'group_6',
     name: 'Группа F',
-    size: 4,
+    size: 3,
     teams: [
       {
         id: 't_18',
@@ -144,17 +144,12 @@ var groups = [
       },
       {
         id: 't_19',
-        badge: 'E2',
+        badge: 'F2',
         name: ''
       },
       {
         id: 't_20',
-        badge: 'E3',
-        name: ''
-      },
-      {
-        id: 't_21',
-        badge: 'E4',
+        badge: 'F3',
         name: ''
       }
     ]
@@ -326,11 +321,11 @@ var teams = [
     name: 'Аксайский КК',
     shortname: ''
   },
-  {
-    id: 'team23',
-    name: 'Кронштадтский морской КВК',
-    shortname: ''
-  },
+  // {
+  //   id: 'team23',
+  //   name: 'Кронштадтский морской КВК',
+  //   shortname: ''
+  // },
   {
     id: 'team24',
     name: 'Филиал НВМУ г. Калининград',
@@ -637,7 +632,7 @@ function loadGroups() {
     {
       id: 'group_6',
       name: 'Группа F',
-      size: 4,
+      size: 3,
       teams: [
         {
           id: 't_18',
@@ -646,17 +641,12 @@ function loadGroups() {
         },
         {
           id: 't_19',
-          badge: 'E2',
+          badge: 'F2',
           name: ''
         },
         {
           id: 't_20',
-          badge: 'E3',
-          name: ''
-        },
-        {
-          id: 't_21',
-          badge: 'E4',
+          badge: 'F3',
           name: ''
         }
       ]
