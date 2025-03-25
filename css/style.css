@@ -1,7 +1,7 @@
 .content-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 4fr;
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@
   align-items: flex-start;
   justify-content: center;
   height: 100%;
-  /* line-height: 5vh; */
+  line-height: 5vh;
 }
 
 .groups-container {
@@ -47,6 +47,7 @@
   grid-column: 2 / 4;
   grid-row: 2;
   padding: 2px;
+  padding-bottom: 10%;
 }
 
 .teams-container {
@@ -186,7 +187,7 @@
 
 .army-logo {
   height: 100%;
-  width: 20%;
+  width: 17%;
 }
 
 #button svg {
